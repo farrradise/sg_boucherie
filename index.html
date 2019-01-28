@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+    <title>StyleGuide Boucherie</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    
+</head>
+<body>
+    <!-- <H1>  Workflow nodejs webpack et gulp et style guide </h1> -->
+
+    <!-- <div>
+      <h2>Liste Workflow</h2>
+      <ul>
+        <li>Wordpress</li>
+        <li>NodeJs</li>
+        <li>WebPack
+          <ul>
+            <li>Loader Babel </li>
+            <li>package </li>
+            <li>package </li>
+          </ul>
+        </li>
+        <li>Gulp
+          <ul>
+            <li>PostCSS</li>
+            <li>Compiler les différents documents</li>
+            <li>Autoprefixer pour une adaptation sur tous les navigateurs</li>
+            <li>SourceMap</li>
+            <li>Minifier (uglify)</li>
+          </ul>
+        </li>
+        <li>Git 
+          <ul>
+            <li>Gitlab</li>
+            <li>Github</li>
+            <li>GitFtp</li>
+          </ul>
+        </li>
+        <li>Local by Flywheel
+          <ul>
+            <li>local server</li>
+            <li>LiveBroadcast</li>
+          </ul>
+        </li>
+        <li>Méthodologie
+          <ul>
+            <li>Agile</li>
+            <li>CSS BEM</li>
+            <li>JS classes</li>
+          </ul>
+        </li>
+      </ul>
+    </div> -->
+    <!-- <div>
+        <h2>
+            Loader Babel pour ES2015 compatibilité navagiateur JS
+        </h2>
+    </div> -->
+  
+  <h1 class="menu-styleguide__h1">Styleguide Quality Viande</h1>
+  <div class="menu-styleguide__container">
+    <p>Le styleguide se veut responsive, les composants seront (sous réserve de validation par le client) exactement semblables à ceux qui apparaissent dans ce document.</p>
+    <h2 class="menu-styleguide__h2">
+      Menu du styleguide
+    </h2>
+    <ul class="menu-styleguide__menu">
+
+      <li><a href="#polices">Police(s) d'écriture</a></li>
+      <li><a href="#colors">Couleurs</a></li>
+      <li><a href="#headlines">Titres et sous-titres</a></li>
+      <li><a href="#paragraph">Paragraphes</a></li>
+      <li><a href="#header">Header</a></li>
+      <li><a href="#footer">Footer</a></li>
+      <li><a href="#lists">Listes</a></li>
+      <li><a href="#links">Liens</a></li>
+      <li><a href="#buttons">Boutons</a></li>
+      <li><a href="#mainSlider">Slider</a></li>
+      <li><a href="#charter">Charte</a></li>
+      <li><a href="#recipes">Recette</a></li>
+      <li><a href="#pagination">Pagination</a></li>
+      <li><a href="#cards">Carte</a></li>
+      <li><a href="#timeline">Timeline</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+
+    <hr>
+    <div class="styleguide__composant polices">
+      <h2 id="polices"> <button>Les polices d'écriture<i class="fas fa-angle-down"></i> </button></h2>
+      <div class="styleguide__content">
+        <div class="table-overflow">
+          <p>Police d'écriture décorative : Merienda (fancyFont)</p>
+          <table>
+            <tr>
+              <th>400 (normal)</th>
+              <th>700 (bold)</th>
+            </tr>
+            <tr>
+              <td class="fancyFont">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </td>
+              <td class="fancyFont fancyFont--bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+            </tr>
+          </table>
+          
+        </div>
+        
+        
+       
+        <div class="table-overflow">
+          <p>Police d'écriture principale : OpenSans (mainFont)</p>
+          <table>
+            <tr>
+              <th>300 (light)</th>
+              <th>400 (normal)</th>
+              <th>700 (bold)</th>
+            </tr>
+            <tr>
+              <td class="mainFont mainFont--light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor, lacus eget dictum aliquet, est ex dictum felis, id ornare. <br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</td>
+              <td class="mainFont">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor, lacus eget dictum aliquet, est ex dictum felis, id ornare. <br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</td>
+              <td class="mainFont mainFont--bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor, lacus eget dictum aliquet, est ex dictum felis, id ornare. <br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</td>
+            </tr>
+
+            <tr>
+              <td class="mainFont mainFont--light mainFont--italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor, lacus eget dictum aliquet, est ex dictum felis, id ornare. <br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</td>
+              <td class="mainFont mainFont--italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor, lacus eget dictum aliquet, est ex dictum felis, id ornare. <br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</td>
+              <td class="mainFont mainFont--bold mainFont--italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor, lacus eget dictum aliquet, est ex dictum felis, id ornare. <br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</td>
+            </tr>
+          </table>
+        </div>  
+        
+        
+      </div>
+    </div>
+
+    
+    <hr>
+    <div class="styleguide__composant colors">
+      <h2 id="colors"> <button>Couleurs <i class="fas fa-angle-down"></i></button></h2>
+      <div class="styleguide__content">
+        <div class="colors__container">
+
+          <div class="card-color">
+            <div class="card-color__visu mainColor"></div>
+            <div class="card-color__name">
+              <p>Couleur principale</p>
+              <p>#90191D</p>
+              <p>$mainColor</p>
+            </div>
+          </div>
+  
+          <!-- <div class="card-color">
+            <div class="card-color__visu mainColorVar"></div>
+            <div class="card-color__name">
+              <p>Couleur principale variante</p>
+              <p>#DF282C</p>
+              <p>$mainColorVar</p>
+            </div>
+          </div> -->
+  
+          
+          <div class="card-color">
+            <div class="card-color__visu bg"></div>
+            <div class="card-color__name ">
+              <p>Couleur background</p>
+              <p>#F7F7F7</p>
+              <p>$bg</p>
+            </div>
+          </div>
+  
+  
+          <div class="card-color">
+            <div class="card-color__visu darkGrey"></div>
+            <div class="card-color__name">
+              <p>Couleur gris sombre</p>
+              <p>#4D4D4D</p>
+              <p>$darkGrey</p>
+            </div>
+          </div>
+  
+          <div class="card-color">
+            <div class="card-color__visu lightGrey"></div>
+            <div class="card-color__name">
+              <p>Couleur gris clair</p>
+              <p>#a0a0a0</p>
+              <!-- 848484 -->
+              <p>$lightGrey</p>
+            </div>
+          </div>
+  
+          <div class="card-color">
+            <div class="card-color__visu darkColor"></div>
+            <div class="card-color__name">
+              <p>Couleur sombre</p>
+              <p>#232323</p>
+              <p>$darkColor</p>
+            </div>
+          </div>
+  
+          <div class="card-color">
+            <div class="card-color__visu lightColor"></div>
+            <div class="card-color__name">
+              <p>Couleur Claire</p>
+              <p>#f9f9f9</p>
+              <p>$lightColor</p>
+            </div>
+          </div>
+  
+          <div class="card-color">
+            <div class="card-color__visu successColor"></div>
+            <div class="card-color__name">
+              <p>Couleur validation</p>
+              <p>#00B233</p>
+              <p>$successColor</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    
+    <hr>
+    <div class="styleguide__composant headlines">
+      <h2 id="headlines"> <button>Titres et sous-titres<i class="fas fa-angle-down"></i></button></h2>
+      <div class="styleguide__content">
+        <div>
+          <p> Titre de niveau 1 : mainFont 2.6em interlignage 1.35em $mainColor </p>
+          <h1 class="h1">Je suis un titre <br>de niveau 1</h1>
+          <h1 class="h1">Je suis un titre de niveau 1</h1>
+        </div> 
+        
+        <div>
+          <p> Titre de niveau 2 : mainFont 2em interlignage 1.25em $darkGrey </p>
+          <h2 class="h2">Je suis un titre de niveau 2</h2>
+          <h2 class="h2 h2--deco">Je suis un titre de niveau 2 <br> avec décoration</h2>
+        </div> 
+
+        <div>
+          <p> Titre de niveau 3 : Merienda em interlignage  $mainColor </p>
+          <h3 class="h3">Je suis un titre de niveau 3</h3>
+          <h3 class="h3 h3--deco">Je suis un titre de niveau 3 <br> avec décoration </h3>
+        </div> 
+
+        <div>
+          <p> Titre de niveau 4 : Merienda em interlignage  $ </p>
+          <h4 class="h4">Je suis un titre de niveau 4</h4>
+          <h4 class="h4">Je suis un titre <br> de niveau 4</h4>
+        </div> 
+        
+      </div>
+    </div>
+
+
+     <hr>
+    <div class="styleguide__composant paragraphs">
+      <h2 id="paragraphs"><button> Textes<i class="fas fa-angle-down"></i></button></h2>
+      <div class="styleguide__content">
+        <p>mainFont, 1em, letterspacing 2px, lineheight 1.45em, $darkColor</p>
+        <h1 class="h1">Ceci est un H1</h1>
+        <p class="p">
+          Sed cras ornare arcu dui vivamus arcu felis. <span class="fancyFont"> FancyFont ici pour exemple </span> In nulla posuere sollicitudin aliquam ultrices sagittis orci. Dictum fusce ut placerat orci nulla pellentesque dignissim enim. Et malesuada fames ac turpis egestas integer eget aliquet nibh. Nunc eget lorem dolor sed viverra ipsum nunc aliquet. Consequat mauris nunc congue nisi vitae. Massa tempor nec feugiat nisl pretium. At volutpat diam ut venenatis tellus in metus. Id ornare arcu odio ut sem nulla pharetra. A iaculis at erat pellentesque adipiscing commodo elit at.
+        </p>
+        
+        <h2 class="h2 h2--deco">Ceci est un H2</h2>
+        <p class="p">
+          Dui id ornare arcu odio ut sem nulla. Ut consequat semper viverra nam libero. Egestas dui id ornare arcu odio ut sem. Nibh tortor id aliquet lectus proin nibh nisl condimentum id. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Nam aliquam sem et tortor consequat id porta. Libero enim sed faucibus turpis in eu mi. Sed augue lacus viverra vitae congue eu. Euismod nisi porta lorem mollis aliquam ut. Faucibus purus in massa tempor nec. Sit amet consectetur adipiscing elit ut aliquam purus sit amet. Eget est lorem ipsum dolor sit amet consectetur. Habitant morbi tristique senectus et netus et malesuada fames.
+        </p>
+
+      <h3 class="h3--deco h3">Ceci est un H3</h3>
+        <p class="p">
+          Sed cras ornare arcu dui vivamus arcu felis. In nulla posuere sollicitudin aliquam ultrices sagittis orci. Dictum fusce ut placerat orci nulla pellentesque dignissim enim. Et malesuada fames ac turpis egestas integer eget aliquet nibh. Nunc eget lorem dolor sed viverra ipsum nunc aliquet. Consequat mauris nunc congue nisi vitae. Massa tempor nec feugiat nisl pretium. At volutpat diam ut venenatis tellus in metus. Id ornare arcu odio ut sem nulla pharetra. A iaculis at erat pellentesque adipiscing commodo elit at.
+        </p>
+        <h4 class="h4">Ceci est un H4</h4>
+        <p class="p">
+          Dui id ornare arcu odio ut sem nulla. Ut consequat semper viverra nam libero. Egestas dui id ornare arcu odio ut sem. Nibh tortor id aliquet lectus proin nibh nisl condimentum id. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Nam aliquam sem et tortor consequat id porta. Libero enim sed faucibus turpis in eu mi. Sed augue lacus viverra vitae congue eu. Euismod nisi porta lorem mollis aliquam ut. Faucibus purus in massa tempor nec. Sit amet consectetur adipiscing elit ut aliquam purus sit amet. Eget est lorem ipsum dolor sit amet consectetur. Habitant morbi tristique senectus et netus et malesuada fames.
+        </p>
+      </div>
+    </div>
+
+
+    <hr>
+    <div class="styleguide__composant leheader">
+      <h2 id="header"><button> Header<i class="fas fa-angle-down"></i></button> </h2>
+      <div class="styleguide__content header">
+        <div class="header__container">
+          <div class="header__bg"></div>
+          <div class="header__logo"> logo ici
+            <img src="" alt="">
+          </div>
+          <div class="header__nav">
+            <button class="header__nav-mob">
+              <i class="fas fa-bars"></i>  
+            </button>
+            <div class="header__nav-links-mob">
+              <button class="header__nav-close">
+                <i class="fas fa-times"></i>
+              </button>
+              <nav>
+                <ul>
+                  <li><a href="http://" target="_blank">accueil</a></li>
+                  <li><a href="http://" target="_blank">à propos</a></li>
+                  <li><a href="http://" target="_blank">catalogue</a></li>
+                  <li><a href="http://" target="_blank">engagements</a></li>
+                  <li><a href="http://" target="_blank">recettes</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="header__nav-other">
+              <nav>
+                <ul>
+                  <li><a href="http://" class="active" target="_blank">accueil</a></li>
+                  <li><a href="http://" target="_blank">à propos</a></li>
+                  <li><a href="http://" target="_blank">catalogue</a></li>
+                  <li><a href="http://" target="_blank">engagements</a></li>
+                  <li><a href="http://" target="_blank">recettes</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+    <div class="styleguide__composant">
+      <h2 id="footer"><button> Footer<i class="fas fa-angle-down"></i></button> </h2>
+      <div class="styleguide__content footer">
+        <div class="footer__contain">
+          <div class="footer__content">
+            <div class="footer__knowmore">
+              <p class="h4">Pour en savoir plus</p>              
+              <ul class="ul">
+                <li><a href="">Politique de confidentialité</a></li>
+                <li><a href="">Mentions légales</a></li>
+                <li><a href="">Plan du site</a></li>
+                <li><a href="">Gestion du site</a></li>
+              </ul>
+            </div>
+            <div class="footer__contact">
+              <p class="h4">Nous contacter</p>
+              <ul class="ul">
+                <li><i class="fas fa-phone"></i> 03.03.03.03.03</li>
+                <li><i class="far fa-envelope"></i> mail@gmail.com</li>
+                <li><i class="fas fa-map-marker-alt"></i>38, rue des la street<br> 62220 Carvin</li>
+              </ul>
+            </div>
+            <div class="footer__horaires">
+              <p class="h4">Nos horaires</p>
+              <ul class="ul">
+                <li>Mardis de 10h à 19h30</li>
+                <li>Merc-dim de 9h30 à 19h30</li>
+                <li>Fermé les lundis</li>
+              </ul>
+            </div>
+            <div class="footer__rs">
+              <p class="h4">Nous suivre<p>
+              <ul class="ul">
+                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <hr>
+    <div class="styleguide__composant lists">
+      <h2 id="lists"><button> Listes<i class="fas fa-angle-down"></i></button> </h2>
+      <div class="styleguide__content">
+        <p>Liste non-ordonnée</p>
+        <ul class="ul">
+          <li>Elément de la liste #1</li>
+          <li>Elément de la liste #2</li>
+          <li>Elément de la liste #3</li>
+          <li>Elément de la liste #4</li>
+        </ul>
+
+        <p>Liste ordonnée</p>
+        <ol class="ol">
+          <li>Elément de la liste #1</li>
+          <li>Elément de la liste #2</li>
+          <li>Elément de la liste #3</li>
+          <li>Elément de la liste #4</li>
+        </ol>
+
+        
+        
+      </div>
+    </div>
+
+
+    <hr>
+    <div class="styleguide__composant links">
+      <h2 id="links"><button> Liens <i class="fas fa-angle-down"></i></button></h2>
+      <div class="styleguide__content">
+        <p class="p">Voici un<a href="http://google.fr" class="link" target="_blank"> lien avec un <br> effet hover </a>.</p>
+        <p class="p"> 
+          Sed cras ornare <a href="" class="link"> arcu dui </a> vivamus arcu felis. 
+          In nulla posuere sollicitudin aliquam ultrices sagittis orci. 
+          Dictum fusce ut placerat orci nulla pellentesque dignissim enim. 
+          Et malesuada fames ac turpis egestas integer eget aliquet nibh. 
+          Nunc eget lorem dolor <a href="" class="link">sed viverra ipsum  </a> nunc aliquet. 
+          Consequat mauris nunc congue nisi vitae. Massa tempor nec feugiat nisl pretium. 
+          At volutpat diam ut venenatis tellus in metus. Id ornare arcu odio ut sem nulla pharetra. 
+          A iaculis at erat pellentesque adipiscing commodo elit at.
+
+        </p>
+      </div>
+    </div>
+
+
+    <hr>
+    <div class="styleguide__composant buttons">
+      <h2 id="buttons"> <button>Boutons<i class="fas fa-angle-down"></i> </button></h2>
+      <div class="styleguide__content">
+        <button class="btn">Bouton</button>
+        <button class="btn btn--dark">Bouton sombre</button>
+        <button class="btn btn--reversed">Bouton inversé</button>
+        <button class="btn btn--var">Bouton variante</button>
+      </div>
+    </div>
+
+
+    <hr>
+    <div class="styleguide__composant myslider">
+      
+      <h2 id="mainSlider"> <button>Slider <i class="fas fa-angle-down"></i></button></h2>
+      <div class="styleguide__content slider">
+        <div id="carouselExampleIndicators" class="carousel slide slider__container" data-ride="carousel">
+            <h2 class="h2 h2--deco">Nos produits</h2>
+        
+        <ol class="carousel-indicators slider__indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner ">
+          <div class="carousel-item slider__item active">
+            <img class="d-block" src="http://saintpierredescorps.blog.lemonde.fr/files/2012/03/2012-03-SPDC-23.jpg" alt="First slide">
+            <div class="carousel-caption  slider__content">
+              <h5 class="h3">La boucherie</h5>
+              <p>Mettre vraie photo - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis commodi dolore repudiandae dolor magni? Ipsam maiores harum sunt quam corporis itaque beatae aliquid, reprehenderit, repellendus vel consequuntur sed! Aperiam, pariatur!</p>
+            </div>
+          </div>
+          <div class="carousel-item slider__item">
+            <img class="d-block" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVO73J12zJ_koWKBb1Szm3se6Tff6oaoNgKrrAWNMITNNzGPu0" alt="Second slide">
+            <div class="carousel-caption slider__content">
+              <h5 class="h3">L'épicerie</h5>
+              <p>Mettre vraie photo - sit amet consectetur, adipisicing elit. Quis commodi dolore repudiandae dolor magni? Ipsam maiores harum sunt quam corporis itaque beatae aliquid, reprehenderit, repellendus vel consequuntur sed! Aperiam, pariatur!</p>
+              <p>Ipsam maiores harum sunt quam corporis itaque beatae aliquid, reprehenderit, repellendus vel consequuntur sed! Aperiam</p>
+            </div>
+          </div>
+          <div class="carousel-item  slider__item">
+            <img class="d-block" src="https://cdn-s-www.lalsace.fr/images/8FCFF3AE-9F34-4670-8509-B0A62ACC6E0D/ALS_V0_07/un-primeur-en-plein-coeur-de-la-cite-du-bollwerk-1483455732.jpg" alt="forth slide">
+            <div class="carousel-caption slider__content">
+              <h5 class="h3">Magasin primeur</h5>
+              <p>Mettre vraie photo - Lorem  reprehenderit, repellendus vel consequuntur sed! Aperiam, pariatur!</p>
+              <p> Lorem  reprehenderit, repellendus vel consequuntur sed! Aperiam, pariatur</p>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+      </div>
+    </div>
+
+    <hr>
+    <div class="styleguide__composant charter">
+      <h2 id="charter"> <button>Charte qualité<i class="fas fa-angle-down"></i></button></h2>
+      <div class="styleguide__content">
+        <div class="charte">
+          <div class="charte__images">
+            <img class="tracabilite " src="images/tracabilite.jpg" alt="engagement 2 ex : traçabilité">
+            <img class="hygiene" src="images/hygiene.jpg" alt="engagement 1 ex : hygiene">
+            <img class="proximite" src="images/proximite.jpg" alt="engagement 3 ex : service">
+          </div>
+          <div class="charte__content">
+            <h2 class="h2 h2--deco">Nos engagements</h2>
+            <div class="charte__content--tracabilite" data-content="tracabilite">
+              <h3 class="h3">L'hygiene, etcates et tesarem</h3>
+              <p class="p">
+              Lorem ipsum dolor sit amet, ut aliquando dissentiunt concludaturque vis, quo falli aeterno ut. In sit bonorum hendrerit dissentias, ea tamquam maiorum adipisci quo. Debet nominavi mea ea, commune epicurei id eam. Modus praesent elaboraret et est.
+              </p>
+            </div>
+            <div class="charte__content--hygiene" data-content="hygiene">
+              <h3 class="h3">Titre tracabilite</h3>
+              <p class="p">
+              Error option cum eu, id sea dictas eirmod, viris praesent an pri. Est lorem volutpat necessitatibus et, eu sit everti reprimique. In cibo harum mollis has, an duo audiam iudicabit, cetero habemus civibus vis eu. Adhuc mucius impetus te cum, nec facer deseruisse in, utamur eleifend quo eu. At vel quod aliquid percipitur, ad pro debitis deserunt.
+              </p>
+            </div>
+            <div class="charte__content--proximite"data-content="proximite">
+              <h3 class="h3">Titre proximité exemple</h3>
+              <p class="p">
+              Est lorem volutpat necessitatibus et, eu sit everti reprimique. In cibo harum mollis has, an duo audiam iudicabit, cetero habemus civibus vis eu. Adhuc mucius impetus te cum, nec facer deseruisse in, utamur eleifend quo eu.
+              </p>
+            </div>
+            <button class="btn btn--var btn--right">en savoir plus</button>
+          </div>
+          <div class="charte__bg-contain">
+            <div class="charte__bg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+    <div class="styleguide__composant recipes">
+      <h2 id="recipes"> <button>Recette <i class="fas fa-angle-down"></i></button></h2>
+      <div class="styleguide__content">
+         <div class="recipe">
+          <div class="recipe__overview">
+            <div class="recipe__overview-bg"></div>
+            <h2 class="h2 h2--deco">Brochettes du chef</h2>
+            <div class="recipe__overview-details">
+              <ul class="ul ">
+          
+                <li>
+                    <i class="fas fa-users"></i>Pour 6 personnes 
+                </li>
+                <li>
+                  <i class="fas fa-euro-sign"></i>
+                  <i class="fas fa-euro-sign"></i>
+                  Budget Moyen
+                </li>
+                <li>
+                  <i class="fas fa-utensils"></i>20 min de préparation 
+                </li>
+                <li>
+                  <i class="fab fa-hotjar"></i>15 min de cuisson <br>
+                </li>
+              </ul>
+              <div class="recipe__overview-img">
+
+                <img src="images/recette.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="recipe__ingredients">
+            <h2 class="h3 h3--deco">Ingrédients</h2>
+            <ul class="ul">
+              <li>De la dinde</li>
+              <li>Des pics à brochettes</li>
+              <li>Une pincée d'amour</li>
+              <li>Un zeste de citron</li>
+            </ul>
+          </div>
+          <div class="recipe__content">
+            <h3 class="h3 h3--deco">La recette</h3>
+            <ol class="ol">
+              <li>
+                Mauris placerat turpis sit amet purus placerat, et auctor diam sagittis. Duis ultrices mollis efficitur. Nunc pretium justo vitae turpis volutpat commodo. Suspendisse placerat at ipsum fringilla suscipit. Phasellus eu hendrerit nulla. Proin interdum malesuada ligula ac viverra. Pellentesque ac diam leo. Fusce eleifend, mauris ut pretium tristique, metus arcu lacinia arcu, in mollis eros augue sit amet nulla. Nunc enim eros, malesuada eu semper sed, convallis ut eros.
+              </li>
+              <li>
+              Fusce condimentum velit justo, eu porta augue rutrum vitae. Maecenas in velit quis lectus ultrices dictum ac sed sem. In semper, ex ac aliquam volutpat, eros erat commodo erat, a lobortis augue leo sed sem. Ut id nulla purus. Morbi quis velit vehicula, blandit nisl a, interdum urna. Sed scelerisque viverra massa quis euismod. Integer pellentesque ornare dapibus. Etiam in nisl sit amet dui luctus vulputate.
+              </li>
+              <li>              
+                Ut dui massa, elementum lacinia tempor eget, tempus vel arcu. Pellentesque vitae nisi quam. Nunc quis elementum arcu. Praesent consequat euismod magna, ac volutpat ex tempor vitae. Vivamus pharetra nisl aliquam mollis pulvinar. Nulla facilisi. Sed metus elit, sollicitudin vitae nunc a, lacinia tincidunt metus.
+              </li>
+              <li>
+              Fusce condimentum velit justo, eu porta augue rutrum vitae. Maecenas in velit quis lectus ultrices dictum ac sed sem. In semper, ex ac aliquam volutpat, eros erat commodo erat, a lobortis augue leo sed sem. Ut id nulla purus. Morbi quis velit vehicula, blandit nisl a, interdum urna. Sed scelerisque viverra massa quis euismod. Integer pellentesque ornare dapibus. Etiam in nisl sit amet dui luctus vulputate.
+              </li>
+              <li>              
+                Ut dui massa, elementum lacinia tempor eget, tempus vel arcu. Pellentesque vitae nisi quam. Nunc quis elementum arcu. Praesent consequat euismod magna, ac volutpat ex tempor vitae. Vivamus pharetra nisl aliquam mollis pulvinar. Nulla facilisi. Sed metus elit, sollicitudin vitae nunc a, lacinia tincidunt metus.
+              </li>
+            </ol>
+          </div>
+        </div>
+
+      
+
+
+      </div>
+    </div>
+
+    
+    <hr>
+    <div class="styleguide__composant pager">
+      <h2 id="pagination"><button> Pagination <i class="fas fa-angle-down"></i></button></h2>
+      <div class="styleguide__content">
+      <nav aria-label="...">
+        <ul class="pagination pagination-sm justify-content-end">
+          <li class="page-item  pager__item active">
+            <a class="page-link pager__link" href="#" tabindex="-1">1</a>
+          </li>
+          <li class="page-item pager__item "><a class="page-link pager__link" href="#">2</a></li>
+          <li class="page-item pager__item "><a class="page-link pager__link" href="#">3</a></li>
+        </ul>
+      </nav>
+        
+      </div>
+    </div>
+
+    
+    <hr>
+    <div class="styleguide__composant cards">
+      <h2 id="cards"><button> Cartes / Vignettes <i class="fas fa-angle-down"></i></button> </h2>
+     
+      <div class="styleguide__content">
+        <div class="cards__container">
+
+          <div class="container-fluid">
+            <div class="row">
+              <a href="" class="col-lg-4 col-sm-6 col-xs-12 mycard">
+                <figure>
+                  <img class="mycard__img" src="images/recette.jpg" alt="">
+                  <figcaption class="mycard__content">
+                    <div class="mycard__content-title">
+                      <div class="mycard__content-title-main">
+                        Brochettes du chef
+                      </div>
+                      <div class="mycard__content-title-infos">
+                        <span>
+                          <i class="fas fa-signal"></i> Difficile
+                        </span>
+                        <span>
+                          <i class="fas fa-clock"></i> 35 min
+                        </span>
+                      </div>
+                    </div>
+                    <div class="mycard__content-detail">
+                      <span class="mycard__content-detail--user">
+                        <i class="fas fa-users"></i>Pour 6 personnes 
+                      </span>
+                      <span class="mycard__content-detail--euro">
+                          <i class="fas fa-euro-sign"></i>
+                          <i class="fas fa-euro-sign"></i>
+                          Budget Moyen
+                      </span>
+                      <span class="mycard__content-detail--timer1">
+                          <i class="fas fa-utensils"></i>20 min de préparation <br>
+                      </span> 
+                      <span class="mycard__content-detail--timer2">
+                          <i class="fab fa-hotjar"></i>15 min de cuisson <br>
+                      </span>
+                      <button class="btn btn--var">Accéder à la recette</button>
+                    </div>  
+                  </figcaption>
+                </figure>
+              </a>
+
+              <a href="" class="col-lg-4 col-sm-6 col-xs-12 mycard">
+                <figure>
+                  <img class="mycard__img" src="images/recette2.jpg" alt="">
+                  <figcaption class="mycard__content">
+                    <div class="mycard__content-title">
+                      <div class="mycard__content-title-main">
+                        Notre curry coco
+                      </div>
+                      <div class="mycard__content-title-infos">
+                        <span>
+                          <i class="fas fa-signal"></i> Moyen
+                        </span>
+                        <span>
+                          <i class="fas fa-clock"></i> 165 min
+                        </span>
+                      </div>
+                    </div>
+                    <div class="mycard__content-detail">
+                      <span class="mycard__content-detail--user">
+                        <i class="fas fa-users"></i>Pour 6 personnes 
+                      </span>
+                      <span class="mycard__content-detail--euro">
+                          <i class="fas fa-euro-sign"></i> Budget Malin
+                      </span>
+                      <span class="mycard__content-detail--timer1">
+                          <i class="fas fa-utensils"></i>90 min de préparation <br>
+                      </span> 
+                      <span class="mycard__content-detail--timer2">
+                          <i class="fab fa-hotjar"></i>75 min de cuisson <br>
+                      </span>
+                      <button class="btn btn--var">Accéder à la recette</button>
+                    </div>  
+                  </figcaption>
+                </figure>
+              </a>
+
+              <a href="" class="col-lg-4 col-sm-6 col-xs-12 mycard">
+                <figure>
+                  <img class="mycard__img" src="images/recette.png" alt="">
+                  <figcaption class="mycard__content">
+                    <div class="mycard__content-title">
+                      <div class="mycard__content-title-main">
+                        Le hachis parmentier
+                      </div>
+                      <div class="mycard__content-title-infos">
+                        <span>
+                          <i class="fas fa-signal"></i> Facile
+                        </span>
+                        <span>
+                          <i class="fas fa-clock"></i> 150 min
+                        </span>
+                      </div>
+                    </div>
+                    <div class="mycard__content-detail">
+                      <span class="mycard__content-detail--user">
+                        <i class="fas fa-users"></i>Pour 4 personnes 
+                      </span>
+                      <span class="mycard__content-detail--euro">
+                          <i class="fas fa-euro-sign"></i>
+                          <i class="fas fa-euro-sign"></i>
+                          <i class="fas fa-euro-sign"></i> Fin gourmet
+                      </span>
+                      <span class="mycard__content-detail--timer1">
+                          <i class="fas fa-utensils"></i>120 min de préparation <br>
+                      </span> 
+                      <span class="mycard__content-detail--timer2">
+                          <i class="fab fa-hotjar"></i>30 min de cuisson <br>
+                      </span>
+                      <button class="btn btn--var">Accéder à la recette</button>
+                    </div>  
+                  </figcaption>
+                </figure>
+              </a>
+
+              <a href="" class="col-lg-4 col-sm-6 col-xs-12 mycard">
+                <figure>
+                  <img class="mycard__img" src="images/mag1.jpg" alt="">
+                  <figcaption class="mycard__content">
+                    <div class="mycard__content-title">
+                      <div class="mycard__content-title-main">
+                        Grosses promos
+                      </div>
+ 
+                    </div>
+                    <div class="mycard__content-detail">
+                      <span class="mycard__content-detail--validity">
+                        <i class="fas fa-clock"></i> Valable jusqu'au 30/03/2019
+                      </span>
+                      <button class="btn btn--var">Visualiser le catalogue</button>
+                    </div>  
+                  </figcaption>
+                </figure>
+              </a>
+
+              <a href="" class="col-lg-4 col-sm-6 col-xs-12 mycard">
+                <figure>
+                  <img class="mycard__img" src="images/mag2.jpg" alt="">
+                  <figcaption class="mycard__content">
+                    <div class="mycard__content-title">
+                      <div class="mycard__content-title-main">
+                        Foire à la viande
+                      </div>
+ 
+                    </div>
+                    <div class="mycard__content-detail">
+                      <span class="mycard__content-detail--validity">
+                        <i class="fas fa-clock"></i> Valable jusqu'au 03/02/2017
+                      </span>
+                      <button class="btn btn--var">Visualiser le catalogue</button>
+                    </div>  
+                  </figcaption>
+                </figure>
+              </a>
+
+              <a href="" class="col-lg-4 col-sm-6 col-xs-12 mycard">
+                <figure>
+                  <img class="mycard__img" src="images/mag3.jpg" alt="">
+                  <figcaption class="mycard__content">
+                    <div class="mycard__content-title">
+                      <div class="mycard__content-title-main">
+                      Spécial ramadan
+                      </div>
+ 
+                    </div>
+                    <div class="mycard__content-detail">
+                      <span class="mycard__content-detail--validity">
+                        <i class="fas fa-clock"></i> Valable jusqu'au 30/03/2019
+                      </span>
+                      <button class="btn btn--var">Visualiser le catalogue</button>
+                    </div>  
+                  </figcaption>
+                </figure>
+              </a>
+
+        
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+        
+        <hr>
+    <div class="styleguide__composant latimeline">
+
+      <h2 id="timeline"><button> Timeline <i class="fas fa-angle-down"></i></button></h2>
+      <div class="styleguide__content timeline">
+        <h2 class="h2 h2--deco">Notre histoire</h2>
+        <div class="timeline__overview">
+          <div class="timeline__cards-container">
+            <button class="timeline__item" data-id-event="0">
+              <figure class="timeline__figure">
+                <img class="timeline__img-mini" src="https://cdn-s-www.estrepublicain.fr/images/1C775F47-FE6E-4F0B-903D-EC793C732F27/ERV_04/nancy-ouverture-de-la-boucherie-halal-ben-au-60-rue-saint-nicolas-1489673449.jpg" alt="">
+                <figcaption class="timeline__figcaption">2001</figcaption>
+              </figure>
+            </button>
+            <button class="timeline__item" data-id-event="1">
+              <figure class="timeline__figure">
+                <img class="timeline__img-mini" src="http://www.nouvellesdefontenay.fr/wp-content/uploads/2013/03/Boucherie_Place-Eglise.jpg" alt="">
+                <figcaption class="timeline__figcaption">2005</figcaption>
+              </figure>
+            </button>
+            <button  class="timeline__item" data-id-event="2">
+              <figure class="timeline__figure">
+                <img class="timeline__img-mini" src="https://www.mesopinions.com/public/img/petition/petition-img-18598-fr.jpeg" alt="">
+                <figcaption class="timeline__figcaption">2006</figcaption>
+              </figure>
+            </button>
+            <button class="timeline__item" data-id-event="3">
+              <figure class="timeline__figure">
+                <img class="timeline__img-mini" src="https://www.mesopinions.com/public/img/petition/petition-img-18805-fr.jpeg" alt="">
+                <figcaption class="timeline__figcaption">2007</figcaption>
+              </figure>
+            </button>
+            <button class="timeline__item" data-id-event="4">
+              <figure class="timeline__figure">
+                <img class="timeline__img-mini" src="https://www.rayonor.fr/wp-content/uploads/2017/11/gondole-epicerie.jpg" alt="">
+                <figcaption class="timeline__figcaption">2010</figcaption>
+              </figure>
+            </button>
+            <button class="timeline__item" data-id-event="5">
+              <figure class="timeline__figure">
+                <img class="timeline__img-mini" src="http://media.tumblr.com/tumblr_m9lxo3kvY21qk6ko2.jpg" alt="">
+                <figcaption class="timeline__figcaption">2010</figcaption>
+              </figure>
+            </button>
+            <button class="timeline__item" data-id-event="6">
+              <figure class="timeline__figure">
+                <img class="timeline__img-mini" src="https://www.apmac.asso.fr/wp-content/uploads/2017/05/Confolens-Sasc-1024x768.jpg" alt="">
+                <figcaption class="timeline__figcaption">2010</figcaption>
+              </figure>
+            </button>
+            <button class="timeline__item" data-id-event="7">
+              <figure class="timeline__figure">
+                <img class="timeline__img-mini" src="https://fac.img.pmdstatic.net/fit/https.3A.2F.2Fphoto.2Efemmeactuelle.2Efr.2Fupload.2Fslideshow.2Fcouscous-party-9817.2Fcouscous-minute-aux-boulettes-173820.2Ejpg/787x600/quality/65/couscous-minute-aux-boulettes.jpg" alt="">
+                <figcaption class="timeline__figcaption">2010</figcaption>
+              </figure>
+            </button>
+          </div>
+        </div>
+        <div class="timeline__details">
+          <div class="timeline__img-contain">
+            <img src="" alt="" class="timeline__img">
+          </div>
+          <div class="timeline__event">
+            <h3 class="h3 h3--deco"></h3>
+            <p class="timeline__date"></p>
+            <p class="p"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+        
+        <hr>
+    <div class="styleguide__composant contact">
+      <h2 id="contact"><button> Contact <i class="fas fa-angle-down"></i></button></h2>
+      <div class="styleguide__content">
+        <div class="contact__bg">
+          <div class="contact__infos">
+            <ul class="ul">
+              <li>03.32.32.32.32</li>
+              <li>contact@qualityviande.com</li>
+              <li>12, rue du machin 62220 Carvin</li>
+            </ul>
+
+            <ul class="ul">
+              <li>le mardi de 10h à 19h30</li>
+              <li>Du mercredi au dimanche de 9h15 à 19h30</li>
+              <li>Fermé le lundi</li>
+            </ul>
+          </div>
+          <div class="contact__map" id="contact__map"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+  <div id="closeAll"><button><span>Tout refermer</span> <i class="fas fa-times"></i></button></div>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&key=AIzaSyBG0b-yitWoJSWjvVKk7j4r8xoGQRBOess"></script>
+  <script src="main.js"></script>
+</body>
+</html>
